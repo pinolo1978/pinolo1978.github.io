@@ -3,7 +3,122 @@ Site <!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SkyLink Volantis</title>
+<title>SkyLink Volantis</title><!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyLink Volantis</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800 scroll-smooth">
+
+<!-- Navbar -->
+<header class="bg-white shadow-lg sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+    <div class="flex items-center space-x-3">
+      <img src="https://images.unsplash.com/photo-1542144582-1ba00456b5d0?auto=format&fit=crop&w=120&q=60" alt="Logo" class="h-10 w-10 rounded-full" />
+      <span class="text-2xl font-extrabold text-blue-900">SkyLink Volantis</span>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#prenota" class="text-blue-900 hover:text-blue-600 transition">Prenota</a>
+      <a href="#destinazioni" class="text-blue-900 hover:text-blue-600 transition">Destinazioni</a>
+      <a href="#flotta" class="text-blue-900 hover:text-blue-600 transition">Flotta</a>
+      <a href="#equipaggio" class="text-blue-900 hover:text-blue-600 transition">Equipaggio</a>
+      <a href="#gallery" class="text-blue-900 hover:text-blue-600 transition">Gallery</a>
+      <a href="#join-us" class="text-blue-900 hover:text-blue-600 transition">Join Us</a>
+      <a href="#contatti" class="text-blue-900 hover:text-blue-600 transition">Contatti</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="relative bg-cover bg-center min-h-[70vh] flex items-center justify-center overflow-hidden"
+         style="background-image:url('https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1920&q=60')">
+  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Volare oltre l'immaginazione</h1>
+    <p class="text-xl md:text-2xl text-gray-100 mb-10">L'esperienza di volo virtuale che connette i cieli del mondo.</p>
+    <a href="#prenota" class="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold shadow">Prenota ora</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=400&q=60" alt="Hostess" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 md:w-64 lg:w-80 object-contain" />
+</section>
+
+<!-- Video -->
+<section id="video" class="py-16 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Guarda il nostro video ufficiale</h2>
+    <div class="relative w-full" style="padding-bottom:56.25%">
+      <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              src="https://www.youtube.com/embed/nyHFE8pYnYY" title="SkyLink Volantis - Video ufficiale" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Booking (mock) -->
+<section id="prenota" class="py-20">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Prenota il tuo volo virtuale</h2>
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <input type="text" placeholder="Aeroporto di partenza" class="border rounded-lg p-3" />
+      <input type="text" placeholder="Aeroporto di arrivo" class="border rounded-lg p-3" />
+      <input type="date" class="border rounded-lg p-3" />
+      <input type="number" min="1" value="1" class="border rounded-lg p-3" />
+      <div class="md:col-span-2 text-center">
+        <button type="button" class="bg-blue-900 text-white px-8 py-3 rounded-xl shadow hover:bg-blue-800">Cerca voli</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Destinations -->
+<section id="destinazioni" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Destinazioni in evidenza</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl shadow-md bg-white text-center"><h3 class="text-xl font-semibold mb-2">Roma</h3><p>La Città Eterna ti aspetta.</p></div>
+      <div class="p-6 rounded-2xl shadow-md bg-white text-center"><h3 class="text-xl font-semibold mb-2">New York</h3><p>Vivi l'energia della Grande Mela.</p></div>
+      <div class="p-6 rounded-2xl shadow-md bg-white text-center"><h3 class="text-xl font-semibold mb-2">Tokyo</h3><p>Dove tradizione e futuro si incontrano.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Fleet -->
+<section id="flotta" class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">La nostra flotta</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- card template -->
+      <script>
+        const fleet = [
+          "Airbus A319","Airbus A321","Airbus A350","Boeing 737 MAX","Avro RJ100","Airbus A330","Airbus A300","MD‑11","TBM 850"
+        ];
+        document.currentScript.insertAdjacentHTML('beforebegin', fleet.map(name=>`<div class="p-6 rounded-2xl shadow-md bg-white text-center"><h3 class="text-xl font-semibold">${name}</h3></div>`).join(''));
+      </script>
+    </div>
+  </div>
+</section>
+
+<!-- Crew -->
+<section id="equipaggio" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Il nostro equipaggio</h2>
+    <img src="https://images.unsplash.com/photo-1562268534-6408e68f141f?auto=format&fit=crop&w=1600&q=60" alt="Equipaggio Volantis" class="w-full rounded-2xl shadow-md" />
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Galleria fotografica</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=60" alt="Aereo al tramonto" class="w-full h-48 object-cover rounded-2xl shadow-md" />
+      <img src="https://images.unsplash.com/photo-1505490099905-7bd1904fd06d?auto=format&fit=crop&w=800&q=60" alt="Cabina economy" class="w-full h-48 object-cover rounded-2xl shadow-md" />
+      <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=60" alt="737 sul lago" class="w-full h-48 object-cover rounded-2xl shadow-md" />
+      <img src="https://images.unsplash.com/photo-1585517810708-eee022f7e792?auto=format&fit=crop&w=800&q=60" alt="737 in avvicinamento" class="w-full h-48 object-cover rounded-2xl shadow-md" />
+      <img src="https://images.unsplash.com/photo-1525755662778-989d052
 <!-- Tailwind via CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
