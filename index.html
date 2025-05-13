@@ -1,4 +1,97 @@
-Site <!DOCTYPE html>
+Site <!DOCTYPE html><!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyLink Volantis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800 scroll-smooth">
+
+<header class="bg-white shadow-lg sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+    <div class="flex items-center space-x-3">
+      <img src="https://images.unsplash.com/photo-1542144582-1ba00456b5d0?auto=format&fit=crop&w=120&q=60" class="h-10 w-10 rounded-full" alt="">
+      <span class="text-2xl font-extrabold text-blue-900">SkyLink Volantis</span>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#prenota" class="text-blue-900 hover:text-blue-600">Prenota</a>
+      <a href="#destinazioni" class="text-blue-900 hover:text-blue-600">Destinazioni</a>
+      <a href="#flotta" class="text-blue-900 hover:text-blue-600">Flotta</a>
+      <a href="#equipaggio" class="text-blue-900 hover:text-blue-600">Equipaggio</a>
+      <a href="#gallery" class="text-blue-900 hover:text-blue-600">Gallery</a>
+      <a href="#join-us" class="text-blue-900 hover:text-blue-600">Join Us</a>
+      <a href="#contatti" class="text-blue-900 hover:text-blue-600">Contatti</a>
+    </div>
+  </nav>
+</header>
+
+<section class="relative bg-cover bg-center min-h-[70vh] flex items-center justify-center"
+         style="background-image:url('https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1920&q=60')">
+  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="relative z-10 text-center px-6">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Volare oltre l'immaginazione</h1>
+    <p class="text-xl md:text-2xl text-gray-100 mb-10">L'esperienza di volo virtuale che connette i cieli del mondo.</p>
+    <a href="#prenota" class="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold shadow">Prenota ora</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=400&q=60"
+       class="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 md:w-64 lg:w-80" alt="">
+</section>
+
+<section id="video" class="py-16 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Guarda il nostro video ufficiale</h2>
+    <div class="relative w-full" style="padding-bottom:56.25%">
+      <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-lg"
+              src="https://www.youtube.com/embed/nyHFE8pYnYY" title="video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- (sezioni Prenota, Destinazioni e Flotta omesse qui per brevità – le puoi lasciare com’erano) -->
+
+<section id="equipaggio" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Il nostro equipaggio</h2>
+    <img src="https://images.unsplash.com/photo-1562268534-6408e68f141f?auto=format&fit=crop&w=1600&q=60"
+         class="w-full rounded-2xl shadow-md" alt="">
+  </div>
+</section>
+
+<section id="gallery" class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Galleria fotografica</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover rounded-2xl shadow-md" alt="">
+      <img src="https://images.unsplash.com/photo-1505490099905-7bd1904fd06d?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover rounded-2xl shadow-md" alt="">
+      <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover rounded-2xl shadow-md" alt="">
+      <img src="https://images.unsplash.com/photo-1585517810708-eee022f7e792?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover rounded-2xl shadow-md" alt="">
+      <img src="https://images.unsplash.com/photo-1525755662778-989d0520f36e?auto=format&fit=crop&w=800&q=60" class="w-full h-48 object-cover rounded-2xl shadow-md" alt="">
+    </div>
+  </div>
+</section>
+
+<section id="join-us" class="py-20 bg-indigo-50">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-blue-900">Unisciti a noi</h2>
+    <p class="text-lg mb-8">Diventa pilota virtuale su NewSky.</p>
+    <a href="https://newsky.app/airline/sik/info" target="_blank"
+       class="bg-blue-900 text-white px-8 py-3 rounded-xl shadow hover:bg-blue-800">Vai alla pagina NewSky</a>
+  </div>
+</section>
+
+<footer id="contatti" class="bg-blue-900 text-white py-10">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-xl font-semibold mb-4">Contattaci</h3>
+    <p class="mb-2">Email: info@skylinkvolantis.com</p>
+    <p class="mb-6">Discord: SkyLinkVolantis</p>
+    <p>&copy; 2025 SkyLink Volantis</p>
+  </div>
+</footer>
+
+</body>
+</html>
 <html lang="it">
 <head>
 <meta charset="UTF-8" />
